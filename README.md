@@ -22,8 +22,8 @@ As funcionalidades testadas incluem:
 
 ### Pasta: Mapeamento de Cenários de Testes
 
-- arquivo `Cenarios-De-Testes-Automatizados.feature` com o mapeamento dos cenários automatizados, utilizando a abordagem BDD (Behavior Driven Development).  
-- arquivo `Especificacao-Funcional.feature` com o mapeamento de alguns cenários mapeados descritos em linguagem natural para facilitar a compreensão do comportamento esperado do sistema.
+- Arquivo `Cenarios-De-Testes-Automatizados.feature` com o mapeamento dos cenários automatizados, utilizando a abordagem BDD (Behavior Driven Development).  
+- Arquivo `Especificacao-Funcional.feature` com o mapeamento de alguns cenários mapeados descritos em linguagem natural para facilitar a compreensão do comportamento esperado do sistema.
 
 ### Pasta: Relatórios
 
