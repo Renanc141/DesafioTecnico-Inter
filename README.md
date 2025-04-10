@@ -105,6 +105,8 @@ Pedidos (criação, consulta e exclusão)
 
 ### 📝 **Cenários de Teste**
 
+> **Observação:** O arquivo `.feature` contendo os cenários de testes especificados no comportamento BDD está localizado na pasta **Mapeamentos de Cenários de Testes**.
+
 #### **POST**
 
 | Cenário  | Descrição                                                                 |
@@ -143,7 +145,7 @@ Pedidos (criação, consulta e exclusão)
 
 ---
 
-### 🔍 **Explicação dos Casos de Teste**
+### 🔍 **Explicação dos Cenários de Teste**
 
 - **POST**: Cenários relacionados à criação de pedidos e animais de estimação.
   - **Cenário 1**: Criar um pedido de compra com dados válidos.
@@ -168,5 +170,23 @@ Pedidos (criação, consulta e exclusão)
 
 - **DELETE**: Cenário relacionado à exclusão de usuários.
   - **Cenário 16**: Excluir um usuário de login no PetStore.
+
+---
+
+### 🚀 **Conclusão**
+
+Este projeto foi desenvolvido para automatizar os cenários de teste da API pública do **PetStore** (Drogaria Araujo) utilizando **Rest Assured** e o conceito de **POJO (Plain Old Java Object)**, proporcionando uma maneira eficiente e confiável de garantir a qualidade da API.
+
+Todos os cenários de testes foram mapeados, organizados e implementados com base no comportamento especificado pelo framework **BDD**. O uso do **Allure Report** permite gerar relatórios claros e detalhados para análise de resultados, enquanto o **Maven** facilita a gestão das dependências e execução dos testes.
+
+A automação de testes é uma etapa crucial para assegurar a robustez de qualquer sistema. Com esta solução, conseguimos garantir que as funcionalidades da API do **PetStore** funcionem conforme o esperado, sem comprometer a experiência do usuário final.
+
+#### **Próximos Passos:**
+
+- Continuar a expansão dos cenários de testes conforme novos requisitos sejam definidos.
+- Manter a documentação atualizada com novos casos de teste e funcionalidades.
+- Melhorar a cobertura de testes, especialmente em casos de erro e falhas não previstas.
+
+Obrigado por acompanhar este projeto! 😊 Se tiver alguma dúvida ou sugestão, sinta-se à vontade para contribuir!
 
 ---
