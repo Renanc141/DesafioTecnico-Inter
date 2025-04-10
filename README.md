@@ -18,7 +18,7 @@ As funcionalidades testadas incluem:
 
 ### Pasta: Automação de API
 
-Contém toda a automação da API para execução dos testes automatizados.
+- Automação da API para execução dos testes automatizados.
 
 ### Pasta: Mapeamento de Cenários de Testes
 
@@ -27,11 +27,9 @@ Contém toda a automação da API para execução dos testes automatizados.
 
 ### Pasta: Relatórios
 
-Contém:
-
-- Evidências de bugs encontrados durante a execução da automação;
-- Evidências de testes bem-sucedidos;
-- Documento com métricas e KPIs relevantes;
+- Evidências de bugs encontrados durante a execução da automação.
+- Evidências de testes bem-sucedidos.
+- Documento com métricas e KPIs relevantes.
 - Arquivos `.csv` gerados pela ferramenta Allure, com os dados consolidados da execução dos testes.
 
 ---
