@@ -172,6 +172,14 @@ Pedidos (criação, consulta e exclusão)
 - **DELETE**: Cenário relacionado à exclusão de usuários.
   - **Cenário 16**: Excluir um usuário de login no PetStore.
 
+## ✅ Resumo do Mapeamento de Cenários
+
+Foram mapeados **16 cenários de teste** até o momento (podendo ser expandidos futuramente).  
+Desses, **63% estão automatizados** e **37% serão executados de forma manual**.
+
+- 🔁 **Automatizados**: 10 cenários
+- 🧪 **Manuais**: 6 cenários
+
 ---
 
 ### 🚀 **Conclusão**
