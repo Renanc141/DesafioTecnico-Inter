@@ -14,6 +14,28 @@ As funcionalidades testadas incluem:
 
 ---
 
+## Estrutura de Pastas do Projeto
+
+### Pasta: Automação de API
+
+Contém toda a automação da API para execução dos testes automatizados.
+
+### Pasta: Mapeamento de Cenários de Testes
+
+- arquivo `Cenarios-De-Testes-Automatizados.feature` com o mapeamento dos cenários automatizados, utilizando a abordagem BDD (Behavior Driven Development).  
+- arquivo `Especificacao-Funcional.feature` com o mapeamento de alguns cenários mapeados descritos em linguagem natural para facilitar a compreensão do comportamento esperado do sistema.
+
+### Pasta: Relatórios
+
+Contém:
+
+- Evidências de bugs encontrados durante a execução da automação;
+- Evidências de testes bem-sucedidos;
+- Documento com métricas e KPIs relevantes;
+- Arquivos `.csv` gerados pela ferramenta Allure, com os dados consolidados da execução dos testes.
+
+---
+
 ## 🚀 Tecnologias Utilizadas
 
 - Java 24
@@ -36,8 +58,8 @@ A automação dos testes foi realizada em APIs RESTful, utilizando a biblioteca 
 - Rodar no Windows
 - Instalar o Java 24
 - Instalar o Maven 3.9
-- Utilizar Biblioteca Rest Assured
-- Utilizar POJO (Plain Old Java Object)
+- Utilizado Biblioteca Rest Assured
+- Utilizado POJO (Plain Old Java Object)
 
 ### Passos
 
