@@ -18,7 +18,7 @@ Dado que o atendente esteja logado no sistema PetStore
 @Automatizado
 @Criar
 # Este cenário cobre a criação de pedidos de compra com dados válidos
-Esquema do Cenario: Criar um pedido de compra com dados válidos
+Esquema do Cenario: Criar um pedido de compra para um animal de estimação com dados válidos
 And que exista um pedido com <Id> 
 When inserir o <Quantity>
 And inserir <Status>

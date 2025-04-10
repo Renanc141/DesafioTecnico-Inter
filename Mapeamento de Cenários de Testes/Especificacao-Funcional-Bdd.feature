@@ -250,14 +250,13 @@ Exemplos:
 @Consulta
 # Este cenário cobre a consulta de um pedido de compra pelo ID
 Esquema do Cenario: Consultar um pedido de compra por ID
-E que exista um animal com <Id>
-Quando inserir o <IdConsultado>
+Quando consultar pelo ID <Id>
 E submeter a consulta
 Entao retorna os dados do pedido de compra
 
 Exemplos:
-| Id | IdConsultado |
-| 08 | 08           |
+| Id |
+| 08 |
 
 
 
@@ -303,7 +302,7 @@ Exemplos:
 # Este cenário cobre a exclusão de usuário criado
 Esquema do Cenario: Excluir um usuário de login no PetStore
 E que exista um <NomeAtual>
-Quando clicar no <NomeExcluido>
+Quando inserir o <NomeExcluido>
 E submeter a exclusão
 Entao apaga os dados
 E o usuário excluído com sucesso
