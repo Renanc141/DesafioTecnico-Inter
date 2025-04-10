@@ -55,7 +55,7 @@ Cmd > mvn test
 
 ```
 
-## 🗺️ Resumo do Mapeamento dos Cenários
+### 🗺️ **Mapeamento dos Cenários**
 
 Os cenários de teste foram mapeados com base nas principais funcionalidades disponibilizadas pelas APIs públicas da Drogaria Araújo e da Swagger Petstore. A priorização levou em conta a relevância dos endpoints e a cobertura de fluxo completo (happy path + erros esperados).
 
@@ -67,32 +67,38 @@ Gerenciamento de pets
 Operações de usuário (cadastro, login, exclusão)
 Pedidos (criação, consulta e exclusão)
 
-PET
-Método	Endpoint	Cenários Associados
-POST	/pet	@Cenario2
-PUT	/pet	@Cenario7, @Cenario8, @Cenario9
-GET	/findByStatus	@Cenario11, @Cenario5, @Cenario10
-GET	/pet/{petId}	@Cenario12, @Cenario4, @Cenario6
+#### **PET**
 
-Store
-Método	Endpoint	Cenários Associados
-POST	/store/order	@Cenario1, @Cenario3
-GET	/store/order/{orderId}	@Cenario13
+| Método | Endpoint       | Cenários Associados                     |
+|--------|----------------|-----------------------------------------|
+| POST   | `/pet`         | @Cenário2                               |
+| PUT    | `/pet`         | @Cenário7, @Cenário8, @Cenário9         |
+| GET    | `/findByStatus`| @Cenário11, @Cenário5, @Cenário10       |
+| GET    | `/pet/{petId}` | @Cenário12, @Cenário4, @Cenário6        |
 
-User
-Método	Endpoint	Cenários Associados
-GET	/user/{username}	@Cenario14
-PUT	/user/{username}	@Cenario15
-DELETE	/user/{username}	@Cenario16
+#### **Store**
 
-### 🔍 Explicação dos Cenários
+| Método | Endpoint             | Cenários Associados                     |
+|--------|----------------------|-----------------------------------------|
+| POST   | `/store/order`        | @Cenário1, @Cenário3                    |
+| GET    | `/store/order/{orderId}` | @Cenário13                            |
 
-@Cenario2: Cenário específico para criar um pet via POST.
-@Cenario7, @Cenario8, @Cenario9: Cenários relacionados à atualização de pet via PUT.
-@Cenario11, @Cenario5, @Cenario10: Cenários de consulta de pets por status via GET.
-@Cenario12, @Cenario4, @Cenario6: Cenários para buscar detalhes de um pet específico via GET.
-@Cenario1, @Cenario3: Cenários de criação e consulta de pedidos na loja.
-@Cenario13: Cenário para consultar um pedido específico.
-@Cenario14, @Cenario15, @Cenario16: Cenários de manipulação de usuários (consultar, atualizar e deletar).
+#### **User**
+
+| Método | Endpoint             | Cenários Associados                     |
+|--------|----------------------|-----------------------------------------|
+| GET    | `/user/{username}`    | @Cenário14                               |
+| PUT    | `/user/{username}`    | @Cenário15                               |
+| DELETE | `/user/{username}`    | @Cenário16                               |
+
+### 🔍 **Explicação dos Cenários**
+
+- **@Cenário2:** Cenário específico para **criar um pet** via **POST** no endpoint `/pet`.
+- **@Cenário7, @Cenário8, @Cenário9:** Cenários relacionados à **atualização de um pet** via **PUT** no endpoint `/pet`.
+- **@Cenário11, @Cenário5, @Cenário10:** Cenários de **consulta de pets por status** via **GET** no endpoint `/findByStatus`.
+- **@Cenário12, @Cenário4, @Cenário6:** Cenários para **buscar detalhes de um pet específico** via **GET** no endpoint `/pet/{petId}`.
+- **@Cenário1, @Cenário3:** Cenários de **criação e consulta de pedidos** na loja via **POST** em `/store/order` e **GET** em `/store/order/{orderId}`.
+- **@Cenário13:** Cenário para **consultar um pedido específico** via **GET** no endpoint `/store/order/{orderId}`.
+- **@Cenário14, @Cenário15, @Cenário16:** Cenários de **manipulação de usuários**, como **consultar, atualizar e deletar usuários** via **GET**, **PUT** e **DELETE** no endpoint `/user/{username}`.
 
 ---
