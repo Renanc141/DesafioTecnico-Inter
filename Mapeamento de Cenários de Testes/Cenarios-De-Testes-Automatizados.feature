@@ -1,16 +1,16 @@
 #language: pt
 #DesafioTecnico
-#ApiAraujo
+#ApiPetStore
 #AutomacaoDeApi
 
 
-Funcionalidade: Cadastrar pedido de compra e animal de estimação
+Funcionalidade: Utilizar na loja de animais de estimação
   Como um usuário atendente
-  Eu quero cadastrar pedido de compra e animal de estimação
-  Para utilizar na venda de produtos da empresa
+  Eu quero gerenciar pedido e animal
+  Para utilizar na loja de animais de estimação
 
 
-Given que o atendente esteja logado no sistema Araujo
+Dado que o atendente esteja logado no sistema PetStore
 
 
 @POST

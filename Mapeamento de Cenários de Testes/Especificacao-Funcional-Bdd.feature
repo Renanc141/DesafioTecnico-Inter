@@ -1,16 +1,16 @@
 #language: pt
 #DesafioTecnico
-#ApiAraujo
+#ApiPetStore
 #AutomacaoDeApi
 
 
-Funcionalidade: Cadastrar pedido de compra e animal de estimação
+Funcionalidade: Utilizar na loja de animais de estimação
   Como um usuário atendente
-  Eu quero cadastrar pedido de compra e animal de estimação
-  Para utilizar na venda de produtos da empresa
+  Eu quero gerenciar pedido e animal
+  Para utilizar na loja de animais de estimação
 
 
-Dado que o atendente esteja logado no sistema Araujo
+Dado que o atendente esteja logado no sistema PetStore
 
 
 @POST
@@ -18,7 +18,7 @@ Dado que o atendente esteja logado no sistema Araujo
 @Automatizado
 @Criar
 # Este cenário cobre a criação de pedidos de compra com dados válidos
-Esquema do Cenario: Criar um pedido de compra com dados válidos
+Esquema do Cenario: Criar um pedido de compra para um animal de estimação com dados válidos
 E que exista um pedido com <Id> 
 Quando inserir o <Quantidade>
 E inserir <Status>
@@ -207,5 +207,109 @@ Entao retorna todos os dados dos animais com status consultado
 Exemplos:
 | Status  | StatusConsultado |
 | Pending | Pending          |
+
+
+
+@GET
+@Cenario11
+@Manual
+@Consulta
+# Este cenário cobre a consulta de animal de estimação com status existente
+Esquema do Cenario: Consultar um animal de estimação por status 
+E que exista um animal com <Id>
+Quando inserir o <Status>
+E submeter a consulta
+Entao retorna os dados do animal
+
+Exemplos:
+| Id  | Status  |
+| 825 | Pending |
+
+
+
+@GET
+@Cenario12
+@Manual
+@Consulta
+# Este cenário cobre a consulta de animal de estimação pelo ID
+Esquema do Cenario: Consultar um animal de estimação por ID
+E que exista um animal com <Id>
+Quando inserir o <IdConsultado>
+E submeter a consulta
+Entao retorna os dados do animal
+
+Exemplos:
+| Id  | IdConsultado |
+| 825 | 825          |
+
+
+
+@GET
+@Cenario13
+@Manual
+@Consulta
+# Este cenário cobre a consulta de um pedido de compra pelo ID
+Esquema do Cenario: Consultar um pedido de compra por ID
+E que exista um animal com <Id>
+Quando inserir o <IdConsultado>
+E submeter a consulta
+Entao retorna os dados do pedido de compra
+
+Exemplos:
+| Id | IdConsultado |
+| 08 | 08           |
+
+
+
+@GET
+@Cenario14
+@Manual
+@Criar
+# Este cenário cobre a criação de usuário para login
+Esquema do Cenario: Criar um usuário para login no PetStore
+Quando inserir o <Nome>
+E submeter o cadastro
+Entao grava os dados
+E o usuário salvo com sucesso
+
+Exemplos:
+| Nome  |
+| user1 |
+
+
+
+@PUT
+@Cenario15
+@Manual
+@Editar
+# Este cenário cobre a edição de usuário criado
+Esquema do Cenario: Editar um usuário de login no PetStore
+E que exista um <NomeAtual>
+Quando inserir o <NomeNovo>
+E submeter o cadastro
+Entao grava os dados
+E o usuário salvo com sucesso
+
+Exemplos:
+| NomeAtual | NomeNovo |
+| user1     | user2    |
+
+
+
+@DELETE
+@Cenario16
+@Manual
+@Editar
+# Este cenário cobre a exclusão de usuário criado
+Esquema do Cenario: Excluir um usuário de login no PetStore
+E que exista um <NomeAtual>
+Quando clicar no <NomeExcluido>
+E submeter a exclusão
+Entao apaga os dados
+E o usuário excluído com sucesso
+
+Exemplos:
+| NomeAtual | NomeExcluido |
+| user2     | user2        |
 
 
