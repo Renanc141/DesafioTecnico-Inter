@@ -1,6 +1,6 @@
 # 🚀 Projeto de Testes Automatizados - Desafio Inter
 
-Veja mais em [API PetStore](https://petstore.swagger.io/#/)
+API escolhida: [API PetStore](https://petstore.swagger.io/#/)
 
 Projeto desenvolvido como parte do desafio técnico da Inter, com o objetivo de automatizar cenários de testes de uma API pública PetStore - [API PetStore](https://petstore.swagger.io/#/).
 
@@ -33,6 +33,7 @@ A automação dos testes foi realizada em APIs RESTful, utilizando a biblioteca 
 
 ### Pré-requisitos
 
+- Rodar no Windows
 - Instalar o Java 24
 - Instalar o Maven 3.9
 - Utilizar Biblioteca Rest Assured
@@ -107,41 +108,41 @@ Pedidos (criação, consulta e exclusão)
 
 > **Observação:** O arquivo `.feature` contendo os cenários de testes especificados no comportamento BDD está localizado na pasta **Mapeamentos de Cenários de Testes**.
 
-#### **POST**
+### **POST**
 
-| Cenário  | Descrição                                                                 |
-|----------|---------------------------------------------------------------------------|
-| @Cenário1 | Criar um pedido de compra para um animal de estimação com dados válidos  |
-| @Cenário2 | Criar um animal de estimação com dados válidos                           |
-| @Cenário3 | Criar um pedido de compra com a quantidade negativa                      |
+| Cenário   | Descrição                                                                 | Tipo          |
+|-----------|---------------------------------------------------------------------------|---------------|
+| Cenário1  | Criar um pedido de compra para um animal de estimação com dados válidos  | Automatizado  |
+| Cenário2  | Criar um animal de estimação com dados válidos                           | Automatizado  |
+| Cenário3  | Criar um pedido de compra com a quantidade negativa                      | Automatizado  |
 
-#### **GET**
+### **GET**
 
-| Cenário  | Descrição                                                                 |
-|----------|---------------------------------------------------------------------------|
-| @Cenário4 | Consultar um animal de estimação já criado                               |
-| @Cenário5 | Consultar um animal de estimação com status incorreto                    |
-| @Cenário6 | Consultar um animal de estimação com nome incorreto                      |
-| @Cenário10| Consultar todos os animais de estimação pelo status                      |
-| @Cenário11| Consultar um animal de estimação por status                              |
-| @Cenário12| Consultar um animal de estimação por ID                                  |
-| @Cenário13| Consultar um pedido de compra por ID                                     |
-| @Cenário14| Criar um usuário para login no PetStore                                  |
+| Cenário   | Descrição                                                                 | Tipo          |
+|-----------|---------------------------------------------------------------------------|---------------|
+| Cenário4  | Consultar um animal de estimação já criado                               | Automatizado  |
+| Cenário5  | Consultar um animal de estimação com status incorreto                    | Automatizado  |
+| Cenário6  | Consultar um animal de estimação com nome incorreto                      | Automatizado  |
+| Cenário10 | Consultar todos os animais de estimação pelo status                      | Automatizado  |
+| Cenário11 | Consultar um animal de estimação por status                              | Manual        |
+| Cenário12 | Consultar um animal de estimação por ID                                  | Manual        |
+| Cenário13 | Consultar um pedido de compra por ID                                     | Manual        |
+| Cenário14 | Criar um usuário para login no PetStore                                  | Manual        |
 
-#### **PUT**
+### **PUT**
 
-| Cenário  | Descrição                                                                 |
-|----------|---------------------------------------------------------------------------|
-| @Cenário7 | Editar o status de um animal de estimação já criado                      |
-| @Cenário8 | Editar o nome de um animal de estimação já criado                        |
-| @Cenário9 | Editar o ID de um animal de estimação já criado                          |
-| @Cenário15| Editar um usuário de login no PetStore                                   |
+| Cenário   | Descrição                                                                 | Tipo          |
+|-----------|---------------------------------------------------------------------------|---------------|
+| Cenário7  | Editar o status de um animal de estimação já criado                      | Automatizado  |
+| Cenário8  | Editar o nome de um animal de estimação já criado                        | Automatizado  |
+| Cenário9  | Editar o ID de um animal de estimação já criado                          | Automatizado  |
+| Cenário15 | Editar um usuário de login no PetStore                                   | Manual        |
 
-#### **DELETE**
+### **DELETE**
 
-| Cenário  | Descrição                                                                 |
-|----------|---------------------------------------------------------------------------|
-| @Cenário16| Excluir um usuário de login no PetStore                                  |
+| Cenário   | Descrição                                                                 | Tipo          |
+|-----------|---------------------------------------------------------------------------|---------------|
+| Cenário16 | Excluir um usuário de login no PetStore                                  | Manual        |
 
 ---
 
