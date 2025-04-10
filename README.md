@@ -102,3 +102,71 @@ Pedidos (criação, consulta e exclusão)
 - **@Cenário14, @Cenário15, @Cenário16:** Cenários de **manipulação de usuários**, como **consultar, atualizar e deletar usuários** via **GET**, **PUT** e **DELETE** no endpoint `/user/{username}`.
 
 ---
+
+### 📝 **Cenários de Teste**
+
+#### **POST**
+
+| Cenário  | Descrição                                                                 |
+|----------|---------------------------------------------------------------------------|
+| @Cenário1 | Criar um pedido de compra para um animal de estimação com dados válidos  |
+| @Cenário2 | Criar um animal de estimação com dados válidos                           |
+| @Cenário3 | Criar um pedido de compra com a quantidade negativa                      |
+
+#### **GET**
+
+| Cenário  | Descrição                                                                 |
+|----------|---------------------------------------------------------------------------|
+| @Cenário4 | Consultar um animal de estimação já criado                               |
+| @Cenário5 | Consultar um animal de estimação com status incorreto                    |
+| @Cenário6 | Consultar um animal de estimação com nome incorreto                      |
+| @Cenário10| Consultar todos os animais de estimação pelo status                      |
+| @Cenário11| Consultar um animal de estimação por status                              |
+| @Cenário12| Consultar um animal de estimação por ID                                  |
+| @Cenário13| Consultar um pedido de compra por ID                                     |
+| @Cenário14| Criar um usuário para login no PetStore                                  |
+
+#### **PUT**
+
+| Cenário  | Descrição                                                                 |
+|----------|---------------------------------------------------------------------------|
+| @Cenário7 | Editar o status de um animal de estimação já criado                      |
+| @Cenário8 | Editar o nome de um animal de estimação já criado                        |
+| @Cenário9 | Editar o ID de um animal de estimação já criado                          |
+| @Cenário15| Editar um usuário de login no PetStore                                   |
+
+#### **DELETE**
+
+| Cenário  | Descrição                                                                 |
+|----------|---------------------------------------------------------------------------|
+| @Cenário16| Excluir um usuário de login no PetStore                                  |
+
+---
+
+### 🔍 **Explicação dos Casos de Teste**
+
+- **POST**: Cenários relacionados à criação de pedidos e animais de estimação.
+  - **Cenário 1**: Criar um pedido de compra com dados válidos.
+  - **Cenário 2**: Criar um animal de estimação com dados válidos.
+  - **Cenário 3**: Criar um pedido com quantidade negativa.
+  
+- **GET**: Cenários relacionados à consulta de animais de estimação e pedidos de compra.
+  - **Cenário 4**: Consultar um animal de estimação já criado.
+  - **Cenário 5**: Consultar um animal de estimação com status incorreto.
+  - **Cenário 6**: Consultar um animal de estimação com nome incorreto.
+  - **Cenário 10**: Consultar todos os animais de estimação pelo status.
+  - **Cenário 11**: Consultar um animal de estimação por status.
+  - **Cenário 12**: Consultar um animal de estimação por ID.
+  - **Cenário 13**: Consultar um pedido de compra por ID.
+  - **Cenário 14**: Criar um usuário para login no PetStore.
+
+- **PUT**: Cenários relacionados à atualização de informações de animais de estimação e usuários.
+  - **Cenário 7**: Editar o status de um animal de estimação.
+  - **Cenário 8**: Editar o nome de um animal de estimação.
+  - **Cenário 9**: Editar o ID de um animal de estimação.
+  - **Cenário 15**: Editar um usuário de login no PetStore.
+
+- **DELETE**: Cenário relacionado à exclusão de usuários.
+  - **Cenário 16**: Excluir um usuário de login no PetStore.
+
+---
